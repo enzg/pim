@@ -12,15 +12,18 @@
 
 
 ### db
+
+**room onwer**
+
 ```
-room onwer
 key: room
 value: username
 
 ```
+**black list**
 
 ```
-black list
+
 
 key: owner:room
 value [username]
