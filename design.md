@@ -4,19 +4,24 @@
 ``` python
 
 if no room:
-  set key room:username value md5(password) # create room
-  set key username:md5(password):room value [] #create blacklist for the room
-  set key room value [] # create message history for the room
+  set key room:username => md5(password) # create room
+  set key room:username:md5(password) => [] #create blacklist for the room
+  set key room => [] # create message history for the room
   
 ```
 
-## user create room
-
+## create room
+``` python
+  set key room:username => md5(password)
+```
 ## user become gm of the room
 
-## save the message for user in the room by username
+if is the first user of the room 
 
-
+## create message history for the room
+```python
+set key room => []
+```
 ### db
 
 
