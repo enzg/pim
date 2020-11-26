@@ -1,8 +1,10 @@
 # one chat
 
-## user search room
-
 ## user enter room
+if no room:
+  set key room:username value md5(password) # create room
+  set key username:md5(password):room value [] #create blacklist for the room
+  set key room value [] # create message history for the room
 
 ## user create room
 
