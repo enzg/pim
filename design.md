@@ -13,18 +13,29 @@
 
 ### db
 
+
 **room onwer**
 
 ```
-key: room
-value: username
-
+key: username
+value: [room]
 ```
+
 **black list**
 
 ```
-
-
 key: owner:room
 value [username]
+```
+**msg history**
+
+```
+key: room
+value: [
+{
+  username,
+  msg,
+  time
+}
+]
 ```
