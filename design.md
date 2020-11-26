@@ -17,16 +17,23 @@
 **room onwer**
 
 ```
-key: username
+key: owner
 value: [room]
 ```
 
 **black list**
 
 ```
-key: owner:room
+key: owner:md5(password):room
 value [username]
 ```
+
+**user list in room**
+```
+key: room
+value [username]
+```
+
 **msg history**
 
 ```
