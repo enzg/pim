@@ -10,17 +10,18 @@
 
 ## save the message for user in the room by username
 
-```js
 
+### db
+```
 room onwer
 key: room
 value: username
 
 ```
 
-``js
+```
 black list
 
 key: owner:room
 value [username]
-``
+```
