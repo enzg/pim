@@ -3,10 +3,12 @@
 ## user enter room
 ``` python
 
-if no room:
-  set key room:username => md5(password) # create room
-  set key room:username:md5(password) => [] #create blacklist for the room
-  set key room => [] # create message history for the room
+if !room:
+  set  room:username => md5(password) # create room
+  set  room:username:md5(password) => [] #create blacklist for the room
+  set  room:MSG => [] # create message history for the room
+else:
+  set room:USERS => [username]
   
 ```
 
